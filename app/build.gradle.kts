@@ -43,8 +43,19 @@ dependencies {
     implementation(libs.androidx.compose.ui)
     implementation(libs.androidx.compose.ui.graphics)
     implementation(libs.androidx.compose.ui.tooling.preview)
+    // Material Icons für Icons.Default.Add, Icons.Default.Delete
+    implementation("androidx.compose.material:material-icons-extended:1.6.0")
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
+    // Lifecycle für Compose
+    implementation("androidx.lifecycle:lifecycle-runtime-compose:2.8.7")
+    implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.8.7")
+    // Für observeAsState mit LiveData
+    implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.8.7")
+    // Compose Runtime für LiveData
+    implementation("androidx.compose.runtime:runtime-livedata:1.6.0")
+    // Gson für JSON-Serialisierung (SharedPreferences)
+    implementation("com.google.code.gson:gson:2.10.1")
     testImplementation(libs.junit)
     androidTestImplementation(platform(libs.androidx.compose.bom))
     androidTestImplementation(libs.androidx.compose.ui.test.junit4)
